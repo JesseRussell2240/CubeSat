@@ -44,10 +44,55 @@ footer {
   margin-top: 2rem;
 }
 
+/* === TEAM PAGE STYLES === */
+.team-photo {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  display: block;
+  margin: 0 auto 2rem auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.team-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.member {
+  width: 280px;
+  text-align: center;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.member img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  border: 3px solid #ddd;
+}
+
 /* Responsive adjustments */
 @media (max-width: 600px) {
   nav ul li {
     display: block;
     margin: 5px 0;
+  }
+
+  .team-grid {
+    padding: 1rem;
+  }
+
+  .member {
+    width: 90%;
   }
 }
